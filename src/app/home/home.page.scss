@@ -38,3 +38,17 @@
   flex-direction: row;
   justify-content: space-around;
 }
+.cartag{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin : 1px;
+}
+.carchain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin : 1px;
+}
