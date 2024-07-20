@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonSlides } from '@ionic/angular';;
 
 @Component({
   selector: 'app-home',
@@ -20,12 +21,31 @@ export class HomePage implements OnInit {
     autoplay: {
       delay: 3000,
     },
-    loop: true
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: 'fade',
+    slidesPerView: 1,
+    spaceBetween: 10
   };
+
 
   constructor() { }
 
   ngOnInit(): void {
     this.productImages
+  }
+  slidePrev(slides: IonSlides) {
+    slides.slidePrev();
+  }
+
+  slideNext(slides: IonSlides) {
+    slides.slideNext();
   }
 }
