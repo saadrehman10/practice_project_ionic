@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  items: string[] = [];
+  items: Object[] = [];
 
   ngOnInit() {
-    this.items;
+    for (let i = 1; i < 10; i++) {
+      this.items.push(`Review ${i}\n hello the product was great`);
+    }
   }
 
 }

@@ -47,7 +47,6 @@
         <ion-icon name="cart-outline" size="large" color="primary"></ion-icon>
         <p>Shop</p>
       </div>
-
       <div class="cartag">
         <ion-icon name="logo-dropbox" size="large" color="primary"></ion-icon>
         <p>Packing</p>
@@ -60,16 +59,82 @@
         <ion-icon name="car" size="large" color="primary"></ion-icon>
         <p>Shipping</p>
       </div>
+      <div class="cartag">
+        <ion-icon name="home-sharp" size="large" color="primary"></ion-icon>
+        <p>Delivered</p>
+      </div>
     </ion-card-content>
   </ion-card>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Reviews</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
+      <ion-list>
+        <ion-item *ngFor="let item of items; let index">
+          <ion-avatar slot="start">
+            <img [src]="'https://picsum.photos/80/80?random=' + index" alt="avatar" />
+          </ion-avatar>
+          <ion-label>{{ item }}</ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-infinite-scroll>
+        <ion-infinite-scroll-content loadingText="Please wait..."
+          loadingSpinner="bubbles"></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Features</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Design and Display
+
+      Premium design with a durable stainless steel frame
+      Available in various sizes and colors
+      Vivid Super AMOLED display with customizable watch faces
+      Always-on display mode for convenient time checking
+      Health and Fitness Tracking
+
+      Advanced heart rate monitoring
+      Blood oxygen (SpO2) monitoring
+      Sleep tracking with detailed sleep stages and insights
+      Electrocardiogram (ECG) functionality
+      Stress management and guided breathing exercises
+      Body composition analysis (BIA) to measure body fat, skeletal muscle, and more
+      Fitness and Activity Tracking
+
+      Built-in GPS for accurate distance and route tracking
+      Automatic workout detection for various exercises like running, cycling, and swimming
+      Over 90 workout modes for customized tracking
+      Water-resistant up to 50 meters, suitable for swimming
+      Step counter and calorie tracking
+      Smart Features
+
+      Compatibility with Android and iOS devices
+      Notifications for calls, texts, emails, and apps
+      Ability to reply to messages and take calls directly from the watch
+      Samsung Pay for contactless payments
+      Music streaming and storage with support for popular music apps
+      Voice assistants like Bixby for hands-free control
+      Battery Life
+
+      Long-lasting battery life with up to several days of usage on a single charge
+      Fast charging support to quickly top up battery
+      Connectivity and Performance
+
+      Bluetooth, Wi-Fi, and LTE options for connectivity
+      Powerful processor for smooth performance
+      1.5GB RAM and 16GB internal storage
+      Customization and Accessories
+
+      Wide range of watch bands and accessories available
+      Customizable widgets and watch faces to suit your style
+      Samsung Health app integration for detailed health and fitness data
     </ion-card-content>
   </ion-card>
 
