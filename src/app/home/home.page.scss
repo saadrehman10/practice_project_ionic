@@ -26,17 +26,6 @@
   text-decoration: none;
 }
 
-ion-slides, ion-slide {
-  height: 100%;
-}
-
-ion-slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .Rating{
   display: flex;
   flex-direction: row;
@@ -49,9 +38,3 @@ ion-slide img {
   flex-direction: row;
   justify-content: space-around;
 }
-.swiper-buttons {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
