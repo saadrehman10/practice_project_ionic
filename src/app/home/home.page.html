@@ -7,8 +7,14 @@
 
 <ion-content>
   <ion-card>
-    <ion-img src="../../assets/images/rachit-tank-2cFZ_FB08UM-unsplash.jpg" alt="Samsug watch pic"></ion-img>
-
+    <swiper-container speed="3" css-mode="true" pagination='true'>
+      <swiper-slide><ion-img src="../../assets/images/watchImage5.jpg" alt="Samsug watch pic"></ion-img></swiper-slide>
+      <swiper-slide><ion-img src="../../assets/images/watchImage1.jpeg" alt="Samsug watch pic"></ion-img></swiper-slide>
+      <swiper-slide><ion-img src="../../assets/images/watchImage2.jpeg" alt="Samsug watch pic"></ion-img></swiper-slide>
+      <swiper-slide><ion-img src="../../assets/images/watchImage3.jpeg" alt="Samsug watch pic"></ion-img></swiper-slide>
+      <swiper-slide><ion-img src="../../assets/images/watchImage4.jpeg" alt="Samsug watch pic"></ion-img></swiper-slide>
+      ...
+    </swiper-container>
     <ion-card-header>
       <ion-card-title>Samsung Galaxy Watch 6</ion-card-title>
       <ion-card-subtitle>The Samsung Galaxy Watch 6 stands as a testament to cutting-edge wearable
@@ -79,10 +85,6 @@
           <ion-label>{{ item }}</ion-label>
         </ion-item>
       </ion-list>
-      <ion-infinite-scroll>
-        <ion-infinite-scroll-content loadingText="Please wait..."
-          loadingSpinner="bubbles"></ion-infinite-scroll-content>
-      </ion-infinite-scroll>
     </ion-card-content>
   </ion-card>
 
@@ -147,52 +149,94 @@
       </ion-text>
     </ion-card-header>
     <ion-card-content>
-      <div class="moreProcuctCard">
-        <ion-card>
-          <ion-card-content>
-            <ion-thumbnail>
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      <swiper-container loop='true' pagination='false' slides-per-view="3">
+        <swiper-slide>
+          <ion-card>
+            <ion-card-content>
+              <ion-thumbnail>
+                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
+              </ion-thumbnail>
               <ion-text>
-                <h3>Samsung s24 ultra</h3>
+                <h3>S24 ultra</h3>
               </ion-text>
-            </ion-thumbnail>
-          </ion-card-content>
-
-        </ion-card>
-        <ion-card>
-          <ion-card-content>
-            <ion-thumbnail>
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-card-content>
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card>
+            <ion-card-content>
+              <ion-thumbnail>
+                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
+              </ion-thumbnail>
               <ion-text>
-                <h3>Samsung s24 ultra</h3>
+                <h3>S24 ultra</h3>
               </ion-text>
-            </ion-thumbnail>
-          </ion-card-content>
-
-        </ion-card>
-        <ion-card>
-          <ion-card-content>
-            <ion-thumbnail>
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-card-content>
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card>
+            <ion-card-content>
+              <ion-thumbnail>
+                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
+              </ion-thumbnail>
               <ion-text>
-                <h3>Samsung s24 ultra</h3>
+                <h3>S24 ultra</h3>
               </ion-text>
-            </ion-thumbnail>
-          </ion-card-content>
-
-        </ion-card>
-        <ion-card>
-          <ion-card-content>
-            <ion-thumbnail>
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-card-content>
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card>
+            <ion-card-content>
+              <ion-thumbnail>
+                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
+              </ion-thumbnail>
               <ion-text>
-                <h3>Samsung s24 ultra</h3>
+                <h3>S24 ultra</h3>
               </ion-text>
-            </ion-thumbnail>
-          </ion-card-content>
+            </ion-card-content>
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card>
+            <ion-card-content>
+              <ion-thumbnail>
+                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
+              </ion-thumbnail>
+              <ion-text>
+                <h3>S24 ultra</h3>
+              </ion-text>
+            </ion-card-content>
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card>
+            <ion-card-content>
+              <ion-thumbnail>
+                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
+              </ion-thumbnail>
+              <ion-text>
+                <h3>S24 ultra</h3>
+              </ion-text>
+            </ion-card-content>
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card>
+            <ion-card-content>
+              <ion-thumbnail>
+                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
+              </ion-thumbnail>
+              <ion-text>
+                <h3>S24 ultra</h3>
+              </ion-text>
+            </ion-card-content>
+          </ion-card>
+        </swiper-slide>
 
-        </ion-card>
-      </div>
+        ...
+      </swiper-container>
 
     </ion-card-content>
 
