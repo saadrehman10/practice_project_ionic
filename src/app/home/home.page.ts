@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomePage implements OnInit {
   constructor(){}
   ngOnInit() {
-   
+   this.products;
   }
 
 
@@ -500,5 +500,9 @@ export class HomePage implements OnInit {
       "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/thumbnail.png"
     },
   ]
+
+  deleteItem(index : number): void{
+    this.products.splice(index , 1);
+  }
    
 }

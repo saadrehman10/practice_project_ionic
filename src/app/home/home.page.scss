@@ -25,3 +25,15 @@
   #container a {
     text-decoration: none;
   }
+
+
+ .displayedItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+ } 
+ .displayedItemImg{
+    height: 50px;
+    width: 50px;
+ }
