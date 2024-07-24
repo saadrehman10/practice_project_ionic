@@ -504,5 +504,5 @@ export class HomePage implements OnInit {
   deleteItem(index : number): void{
     this.products.splice(index , 1);
   }
-   
+
 }
