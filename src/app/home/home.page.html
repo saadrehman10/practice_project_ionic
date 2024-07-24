@@ -91,7 +91,7 @@
 
 
 
-  
+
 </ion-content>
   <ion-card>
     <ion-card-header>
@@ -154,80 +154,13 @@
       </ion-text>
     </ion-card-header>
     <ion-card-content>
-      <swiper-container loop='true' pagination='false' slides-per-view="3">
-        <swiper-slide>
-          <ion-card>
-            <ion-card-content>
-              <ion-thumbnail>
-                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
-              </ion-thumbnail>
-              <ion-text>
-                <h3>S24 ultra</h3>
-              </ion-text>
-            </ion-card-content>
-          </ion-card>
-        </swiper-slide>
-        <swiper-slide>
-          <ion-card>
-            <ion-card-content>
-              <ion-thumbnail>
-                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
-              </ion-thumbnail>
-              <ion-text>
-                <h3>S24 ultra</h3>
-              </ion-text>
-            </ion-card-content>
-          </ion-card>
-        </swiper-slide>
-        <swiper-slide>
-          <ion-card>
-            <ion-card-content>
-              <ion-thumbnail>
-                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
-              </ion-thumbnail>
-              <ion-text>
-                <h3>S24 ultra</h3>
-              </ion-text>
-            </ion-card-content>
-          </ion-card>
-        </swiper-slide>
-        <swiper-slide>
-          <ion-card>
-            <ion-card-content>
-              <ion-thumbnail>
-                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
-              </ion-thumbnail>
-              <ion-text>
-                <h3>S24 ultra</h3>
-              </ion-text>
-            </ion-card-content>
-          </ion-card>
-        </swiper-slide>
-        <swiper-slide>
-          <ion-card>
-            <ion-card-content>
-              <ion-thumbnail>
-                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
-              </ion-thumbnail>
-              <ion-text>
-                <h3>S24 ultra</h3>
-              </ion-text>
-            </ion-card-content>
-          </ion-card>
-        </swiper-slide>
-        <swiper-slide>
-          <ion-card>
-            <ion-card-content>
-              <ion-thumbnail>
-                <img alt="Silhouette of mountains" src="https://dummyimage.com/300x200/000/fff" />
-              </ion-thumbnail>
-              <ion-text>
-                <h3>S24 ultra</h3>
-              </ion-text>
-            </ion-card-content>
-          </ion-card>
-        </swiper-slide>
-        <swiper-slide>
+    <swiper-container
+    slides-per-view="3" 
+    speed="500" 
+    loop="true" 
+    css-mode="true"
+    >
+      <swiper-slide *ngFor="let i of items">
           <ion-card>
             <ion-card-content>
               <ion-thumbnail>
