@@ -37,3 +37,22 @@
     height: 50px;
     width: 50px;
  }
+ .homePageButtons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+ }
+ .body{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ .homePageButton{
+   height:  2em;
+ }
+ 
+
+ 
