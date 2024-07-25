@@ -12,8 +12,5 @@ export class HomePage implements OnInit {
   }
 
 
-  deleteItem(index : number): void{
-   
-  }
 
 }
