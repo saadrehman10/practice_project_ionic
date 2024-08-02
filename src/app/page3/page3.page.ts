@@ -1,3 +1,4 @@
+import { ServiceService } from './../service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page3Page implements OnInit {
 
-  constructor() { }
+  constructor(
+    public Serviceapi: ServiceService
+  ) { 
+    this.Serviceapi.getPosts().then((res) => {
+
+      console.log(res)
+
+    }).catch((err) => {
+      console.log(err)
+    })
+  }
 
   ngOnInit() {
   }
