@@ -14,14 +14,17 @@
         <ion-button (click)=" followChange()">{{followbtn}}</ion-button>
         <ion-button *ngIf="random">ng if test case </ion-button>
       </div>
-      <ng-component *ngIf="random">
-        <ng-template>
-           <ion-button #red >red hello</ion-button> 
-        </ng-template>
-        <ng-template>
-          <ion-button #blue >blue hello2</ion-button> 
-       </ng-template>
+     <div>
+      <ng-component *ngIf="random; then red; else blue">
+        
       </ng-component>
+      <ng-template #red>
+           <ion-button  >red hello</ion-button> 
+        </ng-template>
+        <ng-template  #blue>
+          <ion-button >blue hello2</ion-button> 
+       </ng-template>
+     </div>
      
    </ion-card-content>
   </ion-card>
