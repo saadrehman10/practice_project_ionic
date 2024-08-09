@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../../../Downloads/home"
+		},
+		{
+			"path": "../../../../../../Downloads/home/test/.vscode"
+		},
+		{
+			"path": "../../../../../../Downloads/home/test/src"
+		},
+		{
+			"path": "../../../../Myapp"
+		},
+		{
+			"path": "../../../../../../Downloads/home/test/src/app"
+		},
+		{
+			"path": "../../../../../../Downloads/home/test/src/assets"
+		},
+		{
+			"path": "../../../../../../Downloads/home/test/src/environments"
+		},
+		{
+			"path": "../../../../../../Downloads/home/test/src/theme"
+		}
+	],
+	"settings": {}
+}
